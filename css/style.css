@@ -13,7 +13,6 @@ body {
 }
 
 .navigation {
-    color: white;
     list-style-type: none;
     display: flex;
 }
@@ -29,36 +28,22 @@ a {
     width: 80%;
     margin: 0 auto;
     margin-top: 6rem;
+    padding-bottom: 2rem;
 }
 
 .price {
     color: red;
+    font-weight: bold;
 }
 
 .lt-price {
     color: black;
     text-decoration: line-through;
+    font-weight: lighter;
 }
 
 .card-content {
     margin-bottom: 1rem;
-}
-
-.card {
-    position: relative;
-    display: inline-block;
-}
-
-.card .img-hover{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    z-index: 1;
-}
-
-.card:hover .img-hover{
-    display: inline;
 }
 
 /* HEADER */
@@ -68,7 +53,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .h-container {
@@ -81,6 +66,10 @@ header {
 
 .logo img {
     width: 20%;
+}
+
+.h-nav{
+    color: white;
 }
 
 .navigation li {
@@ -114,3 +103,64 @@ header {
 .card {
     width: calc(95% / 3);
 }
+.card-img {
+    position: relative;
+    display: inline-block;
+}
+.card-img .img-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+.card-img:hover .img-hover{
+    display: inline;
+}
+
+.tag {
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    z-index: 2;
+}
+
+.sales,.detail {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.sales {
+    background-color: red;
+}
+
+.detail {
+    background-color: green;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a1a1a;
+}
+
+.f-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.f-title {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.f-nav {
+    color: white;
+    align-items: center;
+}
+
