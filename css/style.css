@@ -7,3 +7,61 @@
 img {
     max-width: 100%;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    min-height: 3rem;
+    background-color: #ff6900;
+}
+
+/* COMMON */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.price {
+    color: red;
+}
+
+.lt-price {
+    color: black;
+    text-decoration: line-through;
+}
+
+.card-content {
+    margin-bottom: 1rem;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+}
+
+.card .img-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+
+.card:hover .img-hover{
+    display: inline;
+}
+
+/* MAIN */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(95% / 3);
+}
