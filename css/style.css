@@ -126,6 +126,22 @@ header {
     z-index: 2;
 }
 
+.heart {
+    display: inline-block;
+    color: black;
+    background-color: white;
+    font-size: 3rem;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    z-index: 2;
+}
+
+.heart:hover {
+    color: red;
+}
+
 .sales,.detail {
     display: inline-block;
     color: white;
